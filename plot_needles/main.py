@@ -1,7 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 11 10:15:32 2018
+
+@author: Trinidad Castillo
+"""
+
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection, Line3DCollection
 import numpy as np
-import mpl_toolkits.mplot3d as a3
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -9,13 +15,15 @@ ax = fig.add_subplot(111, projection='3d')
 """
 #Planned trajectory
 """
-p = np.array([[-119.5037579,  -115.36011515, -944.52962352], #p[0]
+p = np.array([[-119.5037579, -115.36011515, -944.52962352], #p[0]
               [-114.07800378, -122.0185057,  -956.22655749], #p[1]
               [-118.00648661, -115.04101155, -960.69477464], #p[2]
 
               [ -51.81599414,  -25.89100708, -943.24303368], #p[3]
               [ -43.26938473,  -31.08287261, -960.56354175], #p[4]
               [ -60.36260355,  -20.69914155, -960.56354175]]) #p[5]
+
+
 
 ax.scatter3D(p[:, 0], p[:, 1], p[:, 2])
 
@@ -40,7 +48,7 @@ for x, y, z, label in zip(x, y,z, labels):
 
 
 """
-# Validation 
+# Validation
 """
 
 v = np.array([[-117.80799414, -113.57900708, -943.58935547], #v[0]

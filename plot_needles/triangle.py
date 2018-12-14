@@ -1,7 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 11 10:15:32 2018
+
+@author: Trinidad Castillo
+"""
+
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection, Line3DCollection
 import numpy as np
-import mpl_toolkits.mplot3d as a3
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
