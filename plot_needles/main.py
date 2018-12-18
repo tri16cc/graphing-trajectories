@@ -23,8 +23,6 @@ p = np.array([[-119.5037579, -115.36011515, -944.52962352], #p[0]
               [ -43.26938473,  -31.08287261, -960.56354175], #p[4]
               [ -60.36260355,  -20.69914155, -960.56354175]]) #p[5]
 
-
-
 ax.scatter3D(p[:, 0], p[:, 1], p[:, 2])
 
 """
@@ -45,7 +43,6 @@ ax.scatter(x, y, z)
 #give the labels to each point
 for x, y, z, label in zip(x, y,z, labels):
     ax.text(x, y, z, label)
-
 
 """
 # Validation
@@ -81,10 +78,7 @@ ax.scatter(x2, y2, z2)
 for x2, y2, z2, label2 in zip(x2, y2,z2, labels2):
     ax.text(x2, y2, z2, label2)
 
-
-"""
 #for 3 needles
-"""
 # generate list of sides' polygons of our pyramid
 verts = [[p[0],p[1],p[2]],
           [p[0],p[2],p[5], p[3]],
